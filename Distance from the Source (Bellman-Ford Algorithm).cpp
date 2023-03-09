@@ -16,7 +16,7 @@ class Solution {
              for(auto it : edges){
                  int u = it[0] , v = it[1] , wt = it[2] ; 
                  //condition && if node reachable i.e dist[u]!=1e8 
-                 if(dist[S]!=1e8 && dist[u]+wt<dist[v]){
+                 if(dist[u]!=1e8 && dist[u]+wt<dist[v]){
                      dist[v]=dist[u]+wt;
                  }
              }
@@ -25,7 +25,7 @@ class Solution {
        for(auto it : edges){
                  int u = it[0] , v = it[1] , wt = it[2] ; 
                  //condition && if node reachable i.e dist[u]!=1e8 
-                 if(dist[S]!=1e8 && dist[u]+wt<dist[v]){
+                 if(dist[u]!=1e8 && dist[u]+wt<dist[v]){
                      //gets updated
                      //dist[v]=dist[u]+wt;
                      return {-1};
